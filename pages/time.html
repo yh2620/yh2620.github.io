@@ -3,7 +3,7 @@
 <title>time</title>
 <link href = "/css/css.css" rel = "stylesheet">
 <style>
-  #timeText{text-align:center;background-color:#ff8c00;border-radius:10px;}#timeText:hover{color:#2099ee;}
+  #timeText{background-color:#ff8c00;border-radius:10px;}#timeText:hover{color:#20aaee;}
 </style>
 <script>
 var time = new Date();var nowDate = time.getDate();
@@ -15,7 +15,7 @@ var nowMonth = nowMonth + 1;
 </head>
   
 <body>
-<h1 id = timeText>시간</h1>
+    <center><h1 id = timeText>시간</h1></center>
 <script>
 document.getElementById("timeText").innerHTML = "현재시간 : " + nowMonth + "월" + nowDate + "일" + nowHour + "시" + nowMin + "분";
 </script>
