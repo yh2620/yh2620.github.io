@@ -5,13 +5,16 @@
 <style>
   #timeText{width:500px;background-color:#ff8c00;border-radius:10px;}#timeText:hover{color:#0080ef;}
   #back-button{color:#000000;background-color:#ffffff;border:2px solid #ff0050;}
+  #extraTimeText{}
 </style>
 <script>
-var time = new Date();var nowDate = time.getDate();
+var time = new Date();
+var nowDate = time.getDate();
 var nowMonth = time.getMonth();
 var nowHour = time.getHours();
 var nowMin = time.getMinutes();
 var nowMonth = nowMonth + 1;
+var extraTime = 580;
 </script>
 </head>
   
@@ -21,7 +24,16 @@ var nowMonth = nowMonth + 1;
 document.getElementById("timeText").innerHTML = "현재시간 : " + nowMonth + "월" + nowDate + "일 " + nowHour + "시" + nowMin + "분";
 </script>
 
-
     <a href = "https://yh2620.github.io"><button id = "back-button">back</button></a>
+  
+  <h1 id = "extraTimeText">ㅇㅇ</h1>
+  <script>
+  //document.getElementById("extraTimeText").innerHTML = extraTime + "시간 남음"
+  if (nowDate == 21){document.getElementById("extraTimeText").innerHTML = "20일 남음"}//넘으면 지울것
+  if (nowDate == 26){document.getElementById("extraTimeText").innerHTML = "15일 남음"}//넘으면 지울것
+  if (nowDate == 29){document.getElementById("extraTimeText").innerHTML = "여름방학 시작"}//방학 되면 지울것
+  if (nowDate == 1){document.getElementById("extraTimeText").innerHTML = "일주일 남음"}//넘으면 지울것
+  if (nowDate == 7){document.getElementById("extraTimeText").innerHTML = "얼마 안남음"}//넘으면 지울것
+  </script>
 </body>
 </html>
