@@ -1,1 +1,2 @@
-var nowTime = new Date();
+var time = new Date();
+var nowDate = time.getDate();
