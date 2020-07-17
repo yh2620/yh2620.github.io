@@ -6,13 +6,14 @@
 var time = new Date();
 var nowDate = time.getDate();
 var nowMonth = time.getMonth();
+var nowMonth = nowMonth + 1;
 </script>
 </head>
   
 <body>
 <h1 id = timeText>월일</h1>
 <script>
-document.getElementById("timeText").innerHTML = nowMonth + "월" + nowDate + "윌";
+document.getElementById("timeText").innerHTML = nowMonth + "월" + nowDate + "일";
 </script>
 <button style="border:2px solid #ff0050;"><a href = "https://yh2620.github.io" style="text-decoration:none;color:#000000;">back</a></button>
 </body>
