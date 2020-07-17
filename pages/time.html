@@ -2,17 +2,17 @@
 <head>
 <title>time</title>
 <link href = "/css/css.css" rel = "stylesheet">
-<script>
-var time = new Date();
-var nowDate = time.getDate();
-var nowMonth = time.getMonth();
-document.getElementById("timeText").innerHTML = "nowDate";
-</script>
+
 </head>
   
 <body>
 <h1 id = timeText>월일</h1>
-
+<script>
+var time = new Date();
+var nowDate = time.getDate();
+var nowMonth = time.getMonth();
+document.getElementById("timeText").innerHTML = nowDate;
+</script>
 <button style="border:2px solid #ff0050;"><a href = "https://yh2620.github.io" style="text-decoration:none;color:#000000;">back</a></button>
 </body>
 </html>
