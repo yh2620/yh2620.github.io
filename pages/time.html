@@ -6,17 +6,18 @@
   #timeText{text-align:center;background-color:#ff8c00;}#timeText:hover{color:#2099ee;}
 </style>
 <script>
-var time = new Date();
-var nowDate = time.getDate();
+var time = new Date();var nowDate = time.getDate();
 var nowMonth = time.getMonth();
+var nowHour = time.getHours();
+var nowMin = time.getMinutes();
 var nowMonth = nowMonth + 1;
 </script>
 </head>
   
 <body>
-<h1 id = timeText>월일</h1>
+<h1 id = timeText>시간</h1>
 <script>
-document.getElementById("timeText").innerHTML = "오늘은... " + nowMonth + "월" + nowDate + "일";
+document.getElementById("timeText").innerHTML = "현재시간 :" + nowMonth + "월" + nowDate + "일" + nowHour + "시" + nowMin + "분";
 </script>
 <button style="border:2px solid #ff0050;"><a href = "https://yh2620.github.io" style="text-decoration:none;color:#000000;">back</a></button>
 </body>
