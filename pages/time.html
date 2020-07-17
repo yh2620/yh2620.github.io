@@ -4,6 +4,7 @@
 <link href = "/css/css.css" rel = "stylesheet">
 <style>
   #timeText{width:300px;background-color:#ff8c00;border-radius:10px;}#timeText:hover{color:#20aaee;}
+  #back-button{color:#000000;background-color:#ffffff;border:2px solid #ff0050;}
 </style>
 <script>
 var time = new Date();var nowDate = time.getDate();
@@ -21,7 +22,6 @@ document.getElementById("timeText").innerHTML = "현재시간 : " + nowMonth + "
 </script>
 
 
-
-<button style="border:2px solid #ff0050;"><a href = "https://yh2620.github.io" style="text-decoration:none;color:#000000;">back</a></button>
+    <a href = "https://yh2620.github.io"><button id = "back-button">back</button></a>
 </body>
 </html>
