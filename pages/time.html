@@ -3,7 +3,7 @@
 <title>time</title>
 <link href = "/css/css.css" rel = "stylesheet">
 <style>
-  #timeText{background-color:#ff8c00;border-radius:10px;}#timeText:hover{color:#20aaee;}
+  #timeText{width:100px;background-color:#ff8c00;border-radius:10px;}#timeText:hover{color:#20aaee;}
 </style>
 <script>
 var time = new Date();var nowDate = time.getDate();
@@ -19,6 +19,9 @@ var nowMonth = nowMonth + 1;
 <script>
 document.getElementById("timeText").innerHTML = "현재시간 : " + nowMonth + "월" + nowDate + "일" + nowHour + "시" + nowMin + "분";
 </script>
+
+
+
 <button style="border:2px solid #ff0050;"><a href = "https://yh2620.github.io" style="text-decoration:none;color:#000000;">back</a></button>
 </body>
 </html>
