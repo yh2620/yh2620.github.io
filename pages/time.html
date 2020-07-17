@@ -3,7 +3,11 @@
 <title>time</title>
 <link href = "/css/css.css" rel = "stylesheet">
 <script>
-
+var time = new Date();
+var nowDate = time.getDate();
+var nowMonth = time.getMonth();
+nowMonth = nowMonth + 1;
+document.write(nowMonth + "월" + nowDate + "일");
 </script>
 </head>
   
