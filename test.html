@@ -3,22 +3,20 @@
 <style>
 #text{color:#11aaaa;}
 body{background-color:#eeeeee;}
+#textChange-btn{background-color:#ffffff;border:2px solid #ff0000;}
 </style>
 </head>
 
 <body>
     <h1 id = "text">Hello World!</h1>
-  
+    <button id = "textChange-btn" onClick=textChange();></button>
 <script>
 //location.href="https://github.com"
   
-var time = new Date();
-time.getHours();
-time.getMinutes();
-time.getSeconds();
-var inputVar = prompt("");
-document.getElementById("text").innerHTML=inputVar
-
+function textChange(){
+    var inputVar = prompt("");
+    document.getElementById("text").innerHTML=inputVar
+    }
 
   
 </script>
