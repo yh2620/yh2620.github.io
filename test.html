@@ -12,7 +12,7 @@ body{background-color:#eeeeee;}
 <body>
     <h1 id = "text">Hello World!</h1>
     <button id = "textChange-btn" onClick="textChange();"><h2>reset</h2></button>
-    <button id = "goMain-btn" onClick="location.href="https://yh2620.github.io"">Go Main</button>
+    <button id = "goMain-btn" onClick="moveMain();">Go Main</button>
 <script>
 //location.href="https://github.com"
   
@@ -20,7 +20,9 @@ function textChange(){
     var inputVar = prompt("");
     document.getElementById("text").innerHTML=inputVar
     }
-
+function moveMain(){
+    location.href="https://yh2620.github.io"
+    }
   
 </script>
 </body>
