@@ -9,12 +9,7 @@
     #github{float:right;width:100px;height:100px;}
     #goDcinside{text-decoration:none;background-color:#08088A;color:#FF0000;}
   </style>
-  <script>
-  function goDcinside(){
-  var where = prompt("이동할 갤러리의 id를 입력하세요");
-  location.href = "https://gall.dcinside.com/" + where;
-  }
-  </script>
+  
 </head>
 
   
@@ -27,6 +22,13 @@
     <a href = "/pages"><button id = "pages-button">Pages</button></a>
     <a href = "https://github.com" target = "_blank"><img id = "github" alt = "GithubLogo"src = "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"></img></a>
     
+    <br>
+    <script>
+    function goDcinside(){
+    var where = prompt("이동할 갤러리의 id를 입력하세요");
+    location.href = "https://gall.dcinside.com/" + where;
+    }
+    </script>
     <h1><a target = "_blank" id = "goDcinside"><button onclick = "goDcinside">갤러리 바로가기(테스트)</button></a></h1>
     </div>
 </body>
