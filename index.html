@@ -24,7 +24,12 @@
     <script>
     function goDcinside(){
     var where = prompt("이동할 갤러리의 id를 입력하세요");
-    location.href = "https://gall.dcinside.com/" + where;
+    if (where == null) {
+        alert("[취소]를 누르셨습니다.");
+        }
+    else {
+        location.href = "https://gall.dcinside.com/" + where;
+        }
     }
     </script>
     <center><a target = "_blank" id = "goDcinside"><button onclick = "goDcinside(); "id = "goDcinside-button">갤러리 바로가기(테스트)</button></a></center>
