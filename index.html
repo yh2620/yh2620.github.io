@@ -20,26 +20,7 @@
         </div>
     <a href = "/pages"><button id = "pages-button">Pages</button></a>
     <a href = "https://github.com" target = "_blank"><img id = "github" alt = "GithubLogo" src = "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"></img></a>
-    
-    <br>
-    <script>
-    function goDcinside(){
-    var where = prompt("이동할 갤러리의 id를 입력하세요");
-    if (where == null) {
-        alert("[취소]를 누르셨습니다.");
-        }
-    else {
-        location.href = "https://gall.dcinside.com/" + where;
-        }
-    }
-    function searchDC(){
-    var q = prompt("검색어를 입력하세요");
-    if (q == null){
-        }
-    else {
-         location.href = "https://search.dcinside.com/post/sort/accuracy/q/" + q;
-        }
-    }
+    <script src = "/script/js-dc.js">
     </script>
     <a target = "_blank" id = "goDcinside"><button onclick = "goDcinside();" id = "goDcinside-button">갤러리 바로가기</button></a>
     <a target = "_blank" onclick = "searchDC();" id = "searchDC"><button id = "searchDC-button">디시 검색</button></a>
