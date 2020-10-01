@@ -5,8 +5,16 @@
 <style>
 #testpage-text{color:#000000;text-decoration:none;}#testpage-text:hover{color:#aaaaaa;}
 #pages-button{color:#000000;background-color:#ffffff;border:2px solid #ff0050;}
+#find-button{color:#000000;background-color:#ffffff;border:2px solid #}
 </style>
-
+<script>
+function find(){
+    var q = prompt();
+    if (q == null){}
+    else{alert($(q);)
+    }
+}
+</script>
 </head>
 <body>
 <div id = "maintext">
@@ -14,11 +22,8 @@
 </div>
 
 <a href = "/pages"><button id = "pages-button">/Pages</button></a>
-  
-<p class = "first">asdfghjkl</p>
-<p class = "second">asdfghjkl</p>
-<p class = "third">asdfghjkl</p>
-
+<button id = "find-button" onclick = "find()">찾기</button>
+<iframe width = 800 height = 500 src = "https://naver.com"></iframe>
 
 
 </body>
