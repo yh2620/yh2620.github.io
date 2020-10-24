@@ -1,9 +1,9 @@
     function goDcinside(){
-    var where = prompt("이동할 갤러리의 id를 입력하세요");
-    if (where == null) {
+    var gallid = prompt("이동할 갤러리의 id를 입력하세요");
+    if (gallid == null) {
         }
     else {
-        location.href = "https://gall.dcinside.com/" + where;
+        location.href = "https://gall.dcinside.com/" + gallid;
         }
     }
     function searchDC(){
