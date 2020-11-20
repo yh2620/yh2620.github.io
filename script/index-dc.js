@@ -3,14 +3,14 @@
     if (gallid == null) {
         }
     else {
-        location.href = "https://gall.dcinside.com/" + gallid;
+        window.open("https://gall.dcinside.com/"+gallid);
         }
     }
     function searchDC(){
-    var q = prompt("검색어를 입력하세요");
-    if (q == null){
+    var keyword = prompt("검색어를 입력하세요");
+    if (keyword == null){
         }
     else {
-         location.href = "https://search.dcinside.com/post/sort/accuracy/q/" + q;
+         window.open("https://search.dcinside.com/post/sort/accuracy/q/"+keyword);
         }
     }
