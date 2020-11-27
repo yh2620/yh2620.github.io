@@ -7,8 +7,9 @@
     #time-button{border:2px solid #ff0050;background-color:#ffffff;border-radius:10px;}#time-button:hover{background-color:orange;}
     #pages-button{border:2px solid #000000;background-color:#ffffff;border-radius:10px;}#pages-button:hover{background-color:#000000;color:#ffffff;}
     #github{float:right;width:100px;height:100px;}
-    #goDcinside{}#goDcinside-button{text-decoration:none;border:2px solid #00AAFF;background-color:#FFFFFF;}#godcinside-button:hover{background-color:#0505AB;color:#FFFFFF;}
-    #searchDC{}#searchDC-button{text-decoration:none;border:2px solid #FF0000;background-color:#FFFFFF;}#searchDC-button:hover{background-color:#0505AB;color:#FFFFFF;}
+    #goDcinside-button{text-decoration:none;border:2px solid #00AAFF;background-color:#FFFFFF;}#godcinside-button:hover{background-color:#0505AB;color:#FFFFFF;}
+    #searchDC-button{text-decoration:none;border:2px solid #FF0000;background-color:#FFFFFF;}#searchDC-button:hover{background-color:#0505AB;color:#FFFFFF;}
+    #redditPopup-button{text-decoration:none;border:2px solid #FF5700;background-color:#FFFFFF;}
   </style>
 </head>
 <!-- BODY START--->
@@ -23,8 +24,9 @@
     <!-- DCINSIDE --->
     <script src = "/script/index-dc.js">
     </script>
-    <a target = "_blank" id = "goDcinside"><button onclick = "goDcinside();" id = "goDcinside-button">갤러리 바로가기</button></a>
-    <a target = "_blank" onclick = "searchDC();" id = "searchDC"><button id = "searchDC-button">디시 검색</button></a>
+    <a target = "_blank"><button onclick = "goDcinside();" id = "goDcinside-button">갤러리 바로가기</button></a>
+    <a target = "_blank" onclick = "searchDC();"><button id = "searchDC-button">디시 검색</button></a>
+    <a onclick = "redditPopup();""><button id = "redditPopup-button">새 창에서 레딧 열기</button></a>
     </div>
 </body>
 </html>
