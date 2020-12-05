@@ -14,8 +14,14 @@ function searchDC(){
          window.open("https://search.dcinside.com/post/sort/accuracy/q/"+keyword);
         }
     }
+function goReddit(){
+    var subRedditName = prompt("서브레딧의 ID를 입력하세요");
+    if (subRedditName != null){
+        window.open("https://reddit.com/r/" + subRedditName)
+    }
+}
 function redditPopup(){
-    var subRedditName = prompt("서브레딧의 이름을 입력하세요");
+    var subRedditName = prompt("서브레딧의 ID를 입력하세요");
     if (subRedditName != null){
         window.open("https://reddit.com/r/" + subRedditName,"reddit","width=800,height=800")
     }
