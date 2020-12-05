@@ -23,6 +23,6 @@ function goReddit(){
 function redditPopup(){
     var subRedditName = prompt("서브레딧의 ID를 입력하세요");
     if (subRedditName != null){
-        window.open("https://reddit.com/r/" + subRedditName,"reddit","width=800,height=800")
+        window.open("https://reddit.com/r/" + subRedditName,"reddit","width=800,height=1000")
     }
 }
