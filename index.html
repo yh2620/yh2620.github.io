@@ -9,7 +9,7 @@
     #github{float:right;width:100px;height:100px;}
     #goDcinside-button{text-decoration:none;border:2px solid #00AAFF;background-color:#FFFFFF;}#godcinside-button:hover{background-color:#0505AB;color:#FFFFFF;}
     #searchDC-button{text-decoration:none;border:2px solid #00AAFF;background-color:#FFFFFF;}#searchDC-button:hover{background-color:#0505AB;color:#FFFFFF;}
-    #redditPopup-button{text-decoration:none;border:2px solid #FF5700;border-radius:10px;background-color:#FFFFFF;}
+    #redditOpen-button{text-decoration:none;border:2px solid #FF5700;border-radius:10px;background-color:#FFFFFF;}#redditOpen-button:hover{background-color:#FF5700;color:#FF0000;}
   </style>
 </head>
 <!-- BODY START--->
@@ -21,12 +21,13 @@
         </div>
     <a href = "/pages"><button id = "pages-button">Pages</button></a>
     <a href = "https://github.com" target = "_blank"><img id = "github" alt = "GithubLogo" src = "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"></img></a>
-    <!-- DCINSIDE --->
+    <!-- ========== --->
     <script src = "/script/index-dc.js">
     </script>
     <a target = "_blank"><button onclick = "goDcinside();" id = "goDcinside-button">갤러리 바로가기</button></a>
     <a target = "_blank" onclick = "searchDC();"><button id = "searchDC-button">디시 검색</button></a>
-    <a onclick = "redditPopup();""><button id = "redditPopup-button">새 창에서 레딧 열기</button></a>
+    <a onclick = "goReddit();""><button id = "redditOpen-button">서브레딧-새 탭</button></a>
+    <a onclick = "redditPopup();""><button id = "redditOpen-button">서브레딧-새 윈도우</button></a>
     </div>
 </body>
 </html>
