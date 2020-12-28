@@ -13,6 +13,9 @@
 #link-div-reddit{color:#000000;border-radius:15px;border:4px solid #FF5700;}
 #link-div-reddit-t{text-decoration:none;color:#FF5700;}#link-div-reddit-t:hover{font-weight:bold;}
 #link-reddit-logo{width:20px;height:20px;}
+#goDcinside-button{text-decoration:none;border:2px solid #00AAFF;background-color:#FFFFFF;}#godcinside-button:hover{background-color:#0505AB;color:#FFFFFF;}
+#searchDC-button{text-decoration:none;border:2px solid #00AAFF;background-color:#FFFFFF;}#searchDC-button:hover{background-color:#0505AB;color:#FFFFFF;}
+#redditOpen-button{text-decoration:none;border:2px solid #FF5700;border-radius:10px;background-color:#FFFFFF;}#redditOpen-button:hover{background-color:#FF5700;color:#00EEEE;}
   
 #logos{width:23px;height:23px;}
 </style>
@@ -23,7 +26,14 @@
         <a id = "maintext" href = "https://yh2620.github.io/pages/shortcuts">yh2620.github.io/pages/shortcuts</a>
         </h1></center></div>
     <a href = "/pages"><button id = "pages-button">/Pages</button></a>
-    
+<br>
+    <script src = "/script/index-dc.js">
+    </script>
+    <a target = "_blank"><button onclick = "goDcinside();" id = "goDcinside-button">갤러리 바로가기</button></a>
+    <a target = "_blank" onclick = "searchDC();"><button id = "searchDC-button">디시 검색</button></a>
+    <a onclick = "goReddit();""><button id = "redditOpen-button">서브레딧-새 탭</button></a>
+    <a onclick = "redditPopup();""><button id = "redditOpen-button">서브레딧-새 윈도우</button></a>
+<hr>
     <div id = "link-div">
         <div id = "link-div-dc">
             <a href = "https://www.dcinside.com" target = "_blank"><img id = "link-dc-logo" src = "https://nstatic.dcinside.com/dc/w/images/logo_icon.ico"/></a>
