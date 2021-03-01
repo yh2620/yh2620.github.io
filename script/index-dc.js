@@ -28,3 +28,9 @@ function redditsearch(){
         window.open("https://reddit.com/search/?q=" + keyword);
     }
 }
+function board(){
+    var id = prompt();
+    if (id != null){
+        window.open("https://boards.4channel.org/" + id);
+    }
+}
