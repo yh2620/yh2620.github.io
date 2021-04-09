@@ -34,3 +34,9 @@ function board(){
         window.open("https://boards.4channel.org/" + id);
     }
 }
+function wik(){
+    var word = prompt();
+    if (word != null){
+        window.open("https://ko.wiktionary.org/wiki/" + word);
+    }
+}
