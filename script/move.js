@@ -37,6 +37,6 @@ function board(){
 function wik(){
     var word = prompt();
     if (word != null){
-        window.open("https://ko.wiktionary.org/wiki/" + word);
+        window.open("https://en.wiktionary.org/wiki/" + word);
     }
 }
